@@ -1,3 +1,9 @@
+// this is just a placeholder I guess. Doesn't really do anything apart from drawing
+// a .png-man on the screen with the ability to scale him up or down with '-' and '='
+// keydown events. Also, pressing 'c' toggles between a sprite of a man and a benis.
+// it also has some really simple collision detection with the edges of the window,
+// but it only works perfectly on unscaled sprites at default sizes.
+
 #include <stdio.h>
 #include <SDL.h>
 #include <SDL_image.h>
