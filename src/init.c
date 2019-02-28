@@ -1,7 +1,7 @@
 //here be dragons
 #include <SDL2/SDL.h>
-#define WINDOW_HEIGHT 768
-#define WINDOW_WIDTH 1024
+#define WINDOW_WIDTH 1280
+#define WINDOW_HEIGHT 720
 
 SDL_Window* gWindow = NULL;
 SDL_Renderer* gRenderer = NULL;
