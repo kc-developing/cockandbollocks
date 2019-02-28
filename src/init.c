@@ -2,8 +2,6 @@
 #include <SDL2/SDL.h>
 #define WINDOW_HEIGHT 768
 #define WINDOW_WIDTH 1024
-#define true 1
-#define false 0
 
 SDL_Window* gWindow = NULL;
 SDL_Renderer* gRenderer = NULL;
@@ -14,7 +12,7 @@ int init()
 {
 	if(SDL_Init(SDL_INIT_VIDEO) < 0)
 	{
-		return false;
+		return 1;
 	}
 	gWindow = SDL_CreateWindow("PLACEHOLDER_TITLE", SDL_WINDOWPOS_UNDEFINED,
                                 SDL_WINDOWPOS_UNDEFINED, WINDOW_WIDTH,
@@ -22,16 +20,16 @@ int init()
 	if(gWindow == NULL)
 	{
 		SDL_Quit();
-		return false;
+		return 2;
 	}
 	gRenderer = SDL_CreateRenderer(gWindow, -1, SDL_RENDERER_ACCELERATED);
 	if(gRenderer == NULL)
 	{
 		SDL_DestroyWindow(gWindow);
 		SDL_Quit();
-		return false;
+		return 3;
 	}
-	return true;
+	return 0;
 }
 
 void deinit()

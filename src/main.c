@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-	if(init() == 0) // INITIALIZE FUCKING EVERYTHING
+	if(init() != 0) // INITIALIZE FUCKING EVERYTHING
 	{
 		//printf("Error initializing. %s\n", SDL_GetError());
 		return -99;
