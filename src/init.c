@@ -8,7 +8,7 @@ SDL_Renderer* gRenderer = NULL;
 int init();
 void deinit();
 
-int init()
+int init(void)
 {
 	if(SDL_Init(SDL_INIT_VIDEO) < 0)
 	{
@@ -32,7 +32,7 @@ int init()
 	return 0;
 }
 
-void deinit()
+void deinit(void)
 {
 	SDL_DestroyWindow(gWindow);
 	SDL_DestroyRenderer(gRenderer);
