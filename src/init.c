@@ -1,3 +1,4 @@
+//here be dragons
 #include <SDL2/SDL.h>
 #define WINDOW_HEIGHT 768
 #define WINDOW_WIDTH 1024
